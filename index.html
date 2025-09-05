@@ -1,17 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Promon</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Promon — Ofertas e Economia</title>
+  <link rel="stylesheet" href="Style.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            SAUDE E FITNESS ||
-            COMIDAS E BEBIDAS ||
-            BELEZA E SPAR 
+  <header class="header">
+    <div class="container header__row">
+        <div class="logo">
+        <img src="img/Promon_corte.png" width="100" class="logo_marca"><span class="logo_texto">Promon</span>
+        </div>
+
+      <form class="busca" role="search" aria-label="Buscar ofertas">
+        <input id="q" name="q" type="search" placeholder="O que você procura..." />
+            <button type="submit" class="btn">Buscar</button>
+      </form>
+
+      <div class="header__actions">
+        <button class="location" aria-label="Selecionar localização">
+          <span class="location__pin" aria-hidden="true">📍</span>
+          <span class="location__text">Sua cidade</span>
+        </button>
+        <nav class="user-nav" aria-label="Acesso do usuário">
+          <a href="#" class="user-nav__link">Entrar</a>
+          <a href="#" class="user-nav__link">Cadastrar</a>
+          <a href="#" class="user-nav__link" aria-label="Carrinho">🛒</a>
         </nav>
-    </header>
+      </div>
+    </div>
+
+    <nav class="nav" aria-label="Categorias"> <!--aqui estou criando o menu linkando para as outras páginas-->
+      <div class="container nav__row">
+        <a href="#" class="nav__link is-active">Destaques</a>
+        <a href="#" class="nav__link">Saúde e Fitness</a>
+        <a href="#" class="nav__link">Comidas & Bebidas</a>
+        <a href="#" class="nav__link">Beleza & Spar</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="container hero__content">
+      <div class="hero__text">
+        <h1>Descubra ofertas que transformam seu dia!</h1>
+        <p>Economize em restaurantes, SPA, academias e muito mais.</p>
+        <form class="hero__search" role="search" aria-label="Buscar no banner">
+          <label class="sr-only" for="hero-q">Buscar</label>
+          <input id="hero-q" name="q" type="search" placeholder="Ex.: rodízio, massagem, hotel..." />
+          <button type="submit" class="btn btn--primary">Explorar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção: Ofertas em destaque -->
+  <main class="main" id="conteudo">
+    <section class="container section">
+      <header class="section__head">
+        <h2>Ofertas em destaque</h2>
+        <a href="#" class="section__cta">Ver todas</a>
+      </header>
+
+      <div class="grid grid--deals">
+        <!-- Card 1 -->
+        <article class="deal-card">
+          <a href="#" class="deal-card__link" aria-label="Uma das melhores academia de Brasília">
+            <figure class="deal-card__media">
+              <img src="img/academia_1.jpg" alt="Malhe em Brasilia" loading="lazy">
+              <figcaption class="sr-only">Uma das melhores academia de Brasília</figcaption>
+              <span class="badge badge--green">-30%</span>
+            </figure>
+            <div class="deal-card__body">
+              <h3 class="deal-card__title">Treinner Academia</h3>
+              <p class="deal-card__meta">Planos • 12 meses</p>
+              <div class="deal-card__price">
+                <span class="price__current">R$ 104,90</span>
+                <span class="price__old">R$ 149,90</span>
+              </div>
+              <div class="deal-card__foot">
+                <span class="rating" aria-label="Avaliação 4,6 de 5">⭐ 4,6 (2.134)</span>
+                <span class="left">Acabando!</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="deal-card">
+          <a href="#" class="deal-card__link" aria-label="Ver oferta Day Spa com massagem">
+            <figure class="deal-card__media">
+              <img src="img/SPA_1.jpeg" alt="Ambiente de spa" loading="lazy">
+              <figcaption class="sr-only">Day Spa com massagem</figcaption>
+              <span class="badge badge--green">-55%</span>
+            </figure>
+            <div class="deal-card__body">
+              <h3 class="deal-card__title">SPA CENTER</h3>
+              <p class="deal-card__meta">Dia • 90 minutos</p>
+              <div class="deal-card__price">
+                <span class="price__current">R$ 89,90</span>
+                <span class="price__old">R$ 199,90</span>
+              </div>
+              <div class="deal-card__foot">
+                <span class="rating">⭐ 4,8 (984)</span>
+                <span class="left">Alta procura</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="deal-card">
+          <a href="#" class="deal-card__link" aria-label="Saia linda e radiante em um dos mais renomados salão de Brasília">
+            <figure class="deal-card__media">
+              <img src="img/salao_1.jpg" alt="Salao com a maior qualidade" loading="lazy">
+              <figcaption class="sr-only">Saia linda e radiante em um dos mais renomados salão de Brasília</figcaption>
+              <span class="badge badge--green">-40%</span>
+            </figure>
+            <div class="deal-card__body">
+              <h3 class="deal-card__title">SAILON</h3>
+              <p class="deal-card__meta">Centro • Cancelamento grátis</p>
+              <div class="deal-card__price">
+                <span class="price__current">R$ 219,00</span>
+                <span class="price__old">R$ 369,00</span>
+              </div>
+              <div class="deal-card__foot">
+                <span class="rating">⭐ 4,5 (1.102)</span>
+                <span class="left">Atendimento mediante agendamento!</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="deal-card">
+          <a href="#" class="deal-card__link" aria-label="Alimentacao Balanceada e Fitness">
+            <figure class="deal-card__media">
+              <img src="img/clinica_saude.png" alt="Clinica Saude" loading="lazy">
+              <figcaption class="sr-only">Alimentacao Balanceada e Fitness</figcaption>
+              <span class="badge badge--green">-35%</span>
+            </figure>
+            <div class="deal-card__body">
+              <h3 class="deal-card__title">SALUTE</h3>
+              <p class="deal-card__meta">Asa Norte • Brasilia</p>
+              <div class="deal-card__price">
+                <span class="price__current">R$ 74,90</span>
+                <span class="price__old">R$ 115,00</span>
+              </div>
+              <div class="deal-card__foot">
+                <span class="rating">⭐ 4,4 (563)</span>
+                <span class="left">Vende rápido</span>
+              </div>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <div class="container newsletter__box">
+        <h3>Receba ofertas exclusivas no e-mail</h3>
+        <form class="newsletter__form" aria-label="Assinar newsletter">
+          <label class="sr-only" for="email">Seu e-mail</label>
+          <input id="email" type="email" placeholder="seuemail@exemplo.com" required />
+          <button class="btn btn--primary" type="submit">Quero receber</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <section>
+        <h4>Sobre</h4>
+        <ul>
+          <li><a href="#">Conheça a Promon</a></li>
+        </ul>
+      </section>
+      <section>
+        <h4>Fale Conosco</h4>
+        <ul>
+          <li><a href="#">Ajuda</a></li>
+          <li><a href="#">Trocas e reembolsos</a></li>
+        </ul>
+      </section>
+      <section>
+        <h4>Contatos</h4>
+         <footer>
+             <div class="contatos">
+                <p>Email: <a href="contato@promon.com.br">contato@promon.com.br</a></p>
+                <p>Telefone: <a href="tel:+556140001234">(61) 4000-1234</a></p>
+                <p>SAC: <a href="tel:08007776060"> 0800 777 6060</a></p>
+            </div>
+            <div class="voltar-topo">
+                <a href="#topo">↑ Voltar ao topo</a>
+            </div>
+        </footer>
+      </section>
+    </div>
+    <div class="footer__copy">
+      © 2025 Promon - Todos os direitos reservados. Imagens ilustrativas.
+    </div>
+  </footer>
+
+  <span class="sr-only" id="sr-instructions">Use Tab para navegar. Pressione Enter para abrir itens.</span>
 </body>
 </html>
