@@ -489,6 +489,51 @@ nav {
   font-size: 0.95rem;
 }
 
+.ajuda {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 8px;
+  line-height: 1.6;
+}
+
+.ajuda h1 {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.ajuda-form {
+  display: grid;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.ajuda-form input,
+.ajuda-form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.ajuda-form button {
+  justify-self: start;
+  margin-top: 0.5rem;
+}
+
+.contato h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.contato p {
+  margin: 0.3rem 0;
+}
+
+
 
 /* Interações */
 .trend-card:hover{ transform: translateY(-2px); box-shadow: var(--shadow); }

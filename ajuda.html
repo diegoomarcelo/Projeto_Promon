@@ -46,40 +46,37 @@
     </nav>
   </header>
 
-  <main>
-    <!-- Seção Institucional -->
-    <section class="container section sobre">
-      <h1>Sobre a Promon</h1>
-      <p>A Promon nasceu para conectar pessoas às melhores ofertas de experiências, produtos e serviços. 
-         Nosso objetivo é proporcionar economia e qualidade, facilitando o acesso a oportunidades que 
-         tornam o dia a dia mais leve e prazeroso.</p>
-      <p>Valorizamos parcerias com empresas locais, incentivando o comércio e fortalecendo a economia da região.</p>
-    </section>
+   
+  <main class="container ajuda">
+  <h1>Central de Ajuda</h1>
+  <p>Preencha o formulário abaixo para enviar sua dúvida ou solicitação. Nossa equipe responderá o mais rápido possível.</p>
 
-    <!-- Seção Missão / Visão / Valores -->
-    <section class="container section mvvs">
-      <h2>Nosso Propósito</h2>
-      <div class="mvvs__grid">
-        <div class="mvvs__item">
-          <h3>Missão</h3>
-          <p>Oferecer experiências de qualidade com preços acessíveis, conectando clientes e negócios.</p>
-        </div>
-        <div class="mvvs__item">
-          <h3>Visão</h3>
-          <p>Ser a plataforma referência em economia inteligente e descoberta de novas experiências.</p>
-        </div>
-        <div class="mvvs__item">
-          <h3>Valores</h3>
-          <ul>
-            <li>💡 Inovação constante</li>
-            <li>🤝 Parceria com respeito</li>
-            <li>📢 Transparência e confiança</li>
-            <li>🌱 Impacto positivo na comunidade</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-  </main>
+  <form class="ajuda-form">
+    <label for="nome">Nome Completo</label>
+    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+
+    <label for="assunto">Assunto</label>
+    <input type="text" id="assunto" name="assunto" placeholder="Digite o assunto" required>
+
+    <label for="mensagem">Descreva sua dúvida</label>
+    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva aqui sua dúvida..." required></textarea>
+
+    <button type="submit" class="btn btn--primary">Enviar</button>
+  </form>
+
+  <section class="contato">
+    <h2>Outros meios de comunicação</h2>
+    <p>Email: <a href="mailto:contato@promon.com.br">contato@promon.com.br</a></p>
+    <p>Telefone: <a href="tel:+556140001234">(61) 4000-1234</a></p>
+    <p>SAC: <a href="tel:08007776060">0800 777 6060</a></p>
+  </section>
+</main>
+
+
+
 
   <!-- Footer -->
   <footer class="footer">
