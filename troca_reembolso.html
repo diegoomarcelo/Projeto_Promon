@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trocas e Reembolsos — Promon</title>
+  <link rel="stylesheet" href="css/Style.css" />
+</head>
+<body>
+  <a id="topo"></a>
+
+  <header class="header">
+    <div class="container header__row">
+        <div class="logo">
+          <a href="index.html" class="logo-link">
+            <img src="img/Promon_corte.png" width="100" class="logo_marca" alt="Logo Promon">
+            <span class="logo_texto">Promon</span>
+        </a>
+      </div>
+
+      <form class="busca" role="search" aria-label="Buscar ofertas">
+        <input id="q" name="q" type="search" placeholder="O que você procura..." />
+            <button type="submit" class="btn">Buscar</button>
+      </form>
+
+      <div class="header__actions">
+        <button class="location" aria-label="Selecionar localização">
+          <span class="location__pin" aria-hidden="true">📍</span>
+          <span class="location__text">Sua cidade</span>
+        </button>
+        <nav class="user-nav" aria-label="Acesso do usuário">
+          <a href="#" class="user-nav__link">Entrar</a>
+          <a href="#" class="user-nav__link">Cadastrar</a>
+          <a href="#" class="user-nav__link" aria-label="Carrinho">🛒</a>
+        </nav>
+      </div>
+    </div>
+
+    <nav class="nav" aria-label="Categorias"> <!--aqui estou criando o menu linkando para as outras páginas-->
+      <div class="container nav__row">
+        <a href="index.html" class="nav__link is-active">Destaques</a>
+        <a href="saudeefitness.html" class="nav__link">Saúde e Fitness</a>
+        <a href="comidasebebidas.html" class="nav__link">Comidas & Bebidas</a>
+        <a href="belezaespa.html" class="nav__link">Beleza & Spar</a>
+      </div>
+    </nav>
+  </header>
+
+<main class="container troca-reembolso">
+  <h1>Trocas e Reembolsos</h1>
+  <p>Se você não ficou satisfeito com sua compra, pode solicitar a troca ou o reembolso de forma simples e rápida.</p>
+
+  <h2>Como funciona</h2>
+  <ul>
+    <li>O prazo para solicitar é de até 7 dias após o recebimento.</li>
+    <li>O produto deve estar em perfeitas condições e na embalagem original.</li>
+    <li>Reembolsos são feitos pelo mesmo método de pagamento.</li>
+  </ul>
+
+  <h2>Passo a passo</h2>
+  <ol class="passos">
+    <li>Acesse <strong>Minha Conta &gt; Pedidos</strong> e selecione o pedido.</li>
+    <li>Clique em <strong>Solicitar troca ou reembolso</strong> e preencha o motivo.</li>
+    <li>Envie sua solicitação e aguarde nosso retorno por e-mail.</li>
+  </ol>
+
+  <p class="aviso"><strong>Atenção:</strong> Produtos com defeito têm prioridade no atendimento.</p>
+</main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <section>
+        <h4>Sobre</h4>
+        <ul>
+          <li><a href="sobre.html">Conheça a Promon</a></li>
+        </ul>
+      </section>
+      <section>
+        <h4>Fale Conosco</h4>
+        <ul>
+          <li><a href="#">Ajuda</a></li>
+          <li><a href="troca_reembolso.html">Trocas e reembolsos</a></li>
+        </ul>
+      </section>
+      <section>
+        <h4>Contatos</h4>
+         <footer>
+             <div class="contatos">
+                <p>Email: <a href="contato@promon.com.br">contato@promon.com.br</a></p>
+                <p>Telefone: <a href="tel:+556140001234">(61) 4000-1234</a></p>
+                <p>SAC: <a href="tel:08007776060"> 0800 777 6060</a></p>
+            </div>
+            <div class="voltar-topo">
+                <a href="#topo">↑ Voltar ao topo</a>
+            </div>
+        </footer>
+      </section>
+    </div>
+    <div class="footer__copy">
+      © 2025 Promon - Todos os direitos reservados. Imagens ilustrativas.
+    </div>
+  </footer>
+
+  <span class="sr-only" id="sr-instructions">Use Tab para navegar. Pressione Enter para abrir itens.</span>
+</body>
+</html>

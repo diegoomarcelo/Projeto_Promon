@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style.css" />
-    <title>Promon — Ofertas e Economia</title>
+    <link rel="stylesheet" href="css/Style.css" />
+    <title>Comida e Bebidas | Promon — Ofertas e Economia</title>
 </head>
 <body>
     <a id="topo"></a>
  <header class="header">
     <div class="container header__row">
         <div class="logo">
-        <img src="img/Promon_corte.png" width="100" class="logo_marca"><span class="logo_texto">Promon</span>
-        </div>
+          <a href="index.html" class="logo-link">
+            <img src="img/Promon_corte.png" width="100" class="logo_marca" alt="Logo Promon">
+            <span class="logo_texto">Promon</span>
+        </a>
+      </div>
 
       <form class="busca" role="search" aria-label="Buscar ofertas">
         <input id="q" name="q" type="search" placeholder="O que você procura..." />
@@ -33,26 +36,267 @@
     </div>
     <nav class="nav" aria-label="Categorias"> <!--aqui estou criando o menu linkando para as outras páginas-->
       <div class="container nav__row">
-        <a href="file:///C:/Users/diego/OneDrive/Documentos/Desenvolvimento_Front_End/Projeto_Promon/Projeto_Promon/index.html?q=saude#" class="nav__link is-active">Destaques</a>
-        <a href="file:///C:/Users/diego/OneDrive/Documentos/Desenvolvimento_Front_End/Projeto_Promon/Projeto_Promon/saudeefitness.html" class="nav__link">Saúde e Fitness</a>
-        <a href="file:///C:/Users/diego/OneDrive/Documentos/Desenvolvimento_Front_End/Projeto_Promon/Projeto_Promon/comidasebebidas.html" class="nav__link">Comidas & Bebidas</a>
-        <a href="file:///C:/Users/diego/OneDrive/Documentos/Desenvolvimento_Front_End/Projeto_Promon/Projeto_Promon/belezaespa.html" class="nav__link">Beleza & Spar</a>
+       <a href="index.html" class="nav__link ">Destaques</a>
+        <a href="saudeefitness.html" class="nav__link">Saúde e Fitness</a>
+        <a href="comidasebebidas.html" class="nav__link is-active">Comidas & Bebidas</a>
+        <a href="belezaespa.html" class="nav__link">Beleza & Spar</a>
       </div>
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="container hero__content">
-      <div class="hero__text">
-        <h1>Descubra ofertas que transformam seu dia!</h1>
-        <p>Economize em restaurantes, SPA, academias e muito mais.</p>
-        <form class="hero__search" role="search" aria-label="Buscar no banner">
-          <label class="sr-only" for="hero-q">Buscar</label>
-          <input id="hero-q" name="q" type="search" placeholder="Ex.: rodízio, massagem, hotel..." />
-          <button type="submit" class="btn btn--primary">Explorar</button>
-        </form>
+  <!-- Seção: Ofertas em destaque -->
+  <main class="main" id="conteudo">
+    <section class="container section">
+      <header class="section__head">
+        <h1>Comidas e Bebidas Perto de Você</h1>
+        <a href="#" class="section__cta"></a>
+      </header>
+
+   <div class="grid grid--deals-modificado">
+        <!-- Card 1 -->
+        <article class="deal-card">
+          <a href="#" class="deal-card__link" aria-label="Nazo Japanese Food - Asa Sul">
+            <figure class="deal-card__media">
+              <img src="img/comida_japonesa.jpg" alt="Nazo Japanese Food - Asa Sul" loading="lazy">
+              <figcaption class="sr-only">Nazo Japanese Food - Asa Sul</figcaption>
+              <span class="badge badge--green">-40%</span>
+            </figure>
+            <div class="deal-card__body">
+              <h3 class="deal-card__title">Nazo Japanese Food: Rodízio Japonês Completo com até 40% OFF!</h3>
+              <p class="deal-card__meta">Asa sul • Brasília</p>
+              <div class="deal-card__price">
+                <span class="price__current">R$ 89,90</span>
+                <span class="price__old">R$ 149,90</span>
+              </div>
+              <div class="deal-card__foot">
+                <span class="rating" aria-label="Avaliação 4,6 de 5">⭐ 4,8 (1.245)</span>
+                <span class="left">Alta procura</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="deal-card">
+          <a href="#" class="deal-card__link" aria-label="Vasto Brasília Shopping">
+            <figure class="deal-card__media">
+              <img src="img/vasto-brasilia-shopping.png" alt="Vasto Brasília Shopping" loading="lazy">
+              <figcaption class="sr-only">Vasto Brasília Shopping</figcaption>
+              <span class="badge badge--green">-86%</span>
+            </figure>
+            <div class="deal-card__body">
+              <h3 class="deal-card__title">Vasto Brasília: Jantar Completo com Entrada + Prato Principal + Sobremesa</h3>
+              <p class="deal-card__meta">Brasília Shopping • Asa Norte • Brasilia</p>
+              <div class="deal-card__price">
+                <span class="price__current">R$ 119,90 </span>
+                <span class="price__old">R$ 210,00</span>
+              </div>
+              <div class="deal-card__foot">
+                <span class="rating">⭐ 4,9 (2.031)</span>
+                <span class="left">Exclusivo no site</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="deal-card">
+          <a href="#" class="deal-card__link" aria-label="Mangai Brasília: Buffet Nordestino à Vontade + Sobremesa de Cortesia">
+            <figure class="deal-card__media">
+              <img src="img/mangai.png" alt="Mangai Brasília: Buffet Nordestino à Vontade + Sobremesa de Cortesia" loading="lazy">
+              <figcaption class="sr-only">Mangai Brasília: Buffet Nordestino à Vontade + Sobremesa de Cortesia</figcaption>
+              <span class="badge badge--green">-50%</span>
+            </figure>
+            <div class="deal-card__body">
+              <h3 class="deal-card__title">Mangai Brasília: Buffet Nordestino à Vontade + Sobremesa de Cortesia</h3>
+              <p class="deal-card__meta">Setor de Clubes • Brasilia • Lago</p>
+              <div class="deal-card__price">
+                <span class="price__current">R$ 79,90</span>
+                <span class="price__old">R$ 120,00</span>
+              </div>
+              <div class="deal-card__foot">
+                <span class="rating">⭐ 4,7 (3.120)</span>
+                <span class="left">Imperdível</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="deal-card">
+          <a href="#" class="deal-card__link" aria-label="Restaurante Universal">
+            <figure class="deal-card__media">
+              <img src="img/restaurante_universal.jpg" alt="Restaurante Universal" loading="lazy">
+              <figcaption class="sr-only">Restaurante Universal</figcaption>
+              <span class="badge badge--green">-55%</span>
+            </figure>
+            <div class="deal-card__body">
+              <h3 class="deal-card__title">Restaurante Universal: Menu Degustação com Harmonização de Vinhos</h3>
+              <p class="deal-card__meta">Asa Norte • Brasilia  </p>
+              <div class="deal-card__price">
+                <span class="price__current">R$ 149,90</span>
+                <span class="price__old">R$ 280,00</span>
+              </div>
+              <div class="deal-card__foot">
+                <span class="rating">⭐ 4,8 (1.012)</span>
+                <span class="left">Desconto extra R$ 43,32 por tempo limitado</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="deal-card">
+          <a href="#" class="deal-card__link" aria-label="Parrilla Burger">
+            <figure class="deal-card__media">
+              <img src="img/hamburguer.png" alt="Parrilla Burger" loading="lazy">
+              <figcaption class="sr-only">Parrilla Burger</figcaption>
+              <span class="badge badge--green">-29%</span>
+            </figure>
+            <div class="deal-card__body">
+              <h3 class="deal-card__title">Parrilla Burger: Combo Burguer Gourmet + Batata + Refrigerante</h3>
+              <p class="deal-card__meta">Águas Claras  • Brasilia </p>
+              <div class="deal-card__price">
+                <span class="price__current">R$ 29,90</span>
+                <span class="price__old">R$ 52,00</span>
+              </div>
+              <div class="deal-card__foot">
+                <span class="rating">⭐ 4,6 (857)</span>
+                <span class="left">Vende Rápido</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="deal-card">
+          <a href="#" class="deal-card__link" aria-label="Oliver Restaurante: Happy Hour Premium">
+            <figure class="deal-card__media">
+              <img src="img/oliver_restaurante.png" alt="Oliver Restaurante: Happy Hour Premium" loading="lazy">
+              <figcaption class="sr-only">Oliver Restaurante: Happy Hour Premium</figcaption>
+              <span class="badge badge--green">-36%</span>
+            </figure>
+            <div class="deal-card__body">
+              <h3 class="deal-card__title">Oliver Restaurante: Happy Hour Premium com Drinks em Dobro</h3>
+              <p class="deal-card__meta">Clube do Golfe • Brasilia • Lago - Sul</p>
+              <div class="deal-card__price">
+                <span class="price__current">R$ 49,90</span>
+                <span class="price__old">R$ 85,00</span>
+              </div>
+              <div class="deal-card__foot">
+                <span class="rating">⭐ 4,9 (1.542)</span>
+                <span class="left">Somente Hoje</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Card 7 -->
+        <article class="deal-card">
+          <a href="#" class="deal-card__link" aria-label="Dolce Far Niente: Pizza">
+            <figure class="deal-card__media">
+              <img src="img/pizzaria.jpg" alt="Dolce Far Niente: Pizza" loading="lazy">
+              <figcaption class="sr-only">Dolce Far Niente: Pizza + Garrafa de Vinho Importado</figcaption>
+              <span class="badge badge--green">-20%</span>
+            </figure>
+            <div class="deal-card__body">
+              <h3 class="deal-card__title">Dolce Far Niente: Pizza + Garrafa de Vinho Importado</h3>
+              <p class="deal-card__meta">Sudoeste • Brasilia </p>
+              <div class="deal-card__price">
+                <span class="price__current">R$ 99,90</span>
+                <span class="price__old">R$ 180,00</span>
+              </div>
+              <div class="deal-card__foot">
+                <span class="rating">⭐ 4,8 (1.322)</span>
+                <span class="left">Oferta Limitada</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Card 8 -->
+        <article class="deal-card">
+          <a href="#" class="deal-card__link" aria-label="Ernesto Café: Brunch Completo">
+            <figure class="deal-card__media">
+              <img src="img/ernesto.jpg" alt="Ernesto Café: Brunch Completo" loading="lazy">
+              <figcaption class="sr-only">Ernesto Café: Brunch Completo</figcaption>
+              <span class="badge badge--green">-15%</span>
+            </figure>
+            <div class="deal-card__body">
+              <h3 class="deal-card__title">Ernesto Café: Brunch Completo com Café Gourmet e Panquecas</h3>
+              <p class="deal-card__meta"> Asa sul • Brasilia </p>
+              <div class="deal-card__price">
+                <span class="price__current">R$ 39,90</span>
+                <span class="price__old">R$ 68,00</span>
+              </div>
+              <div class="deal-card__foot">
+                <span class="rating">⭐ 4,7 (642)</span>
+                <span class="left">Melhor Avaliado</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Card 9 -->
+        <article class="deal-card">
+          <a href="#" class="deal-card__link" aria-label="Dudu Bar Lago:">
+            <figure class="deal-card__media">
+              <img src="img/Dudu Bar Lago.jpg" alt="Dudu Bar Lago:" loading="lazy">
+              <figcaption class="sr-only">Dudu Bar Lago:</figcaption>
+              <span class="badge badge--green">-50%</span>
+            </figure>
+            <div class="deal-card__body">
+              <h3 class="deal-card__title">Dudu Bar Lago: Jantar para 2 + Drinks de Boas-Vindas</h3>
+              <p class="deal-card__meta"> Lago - Sul • Brasilia </p>
+              <div class="deal-card__price">
+                <span class="price__current">R$ 139,90</span>
+                <span class="price__old">R$ 260,00</span>
+              </div>
+              <div class="deal-card__foot">
+                <span class="rating">⭐ 4,8 (1.105)</span>
+                <span class="left">Alta Procura</span>
+              </div>
+            </div>
+          </a>
+        </article>
       </div>
+    </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <section>
+        <h4>Sobre</h4>
+        <ul>
+          <li><a href="sobre.html">Conheça a Promon</a></li>
+        </ul>
+      </section>
+      <section>
+        <h4>Fale Conosco</h4>
+        <ul>
+          <li><a href="#">Ajuda</a></li>
+          <li><a href="troca_reembolso.html">Trocas e reembolsos</a></li>
+        </ul>
+      </section>
+      <section>
+        <h4>Contatos</h4>
+         <footer>
+             <div class="contatos">
+                <p>Email: <a href="contato@promon.com.br">contato@promon.com.br</a></p>
+                <p>Telefone: <a href="tel:+556140001234">(61) 4000-1234</a></p>
+                <p>SAC: <a href="tel:08007776060"> 0800 777 6060</a></p>
+            </div>
+            <div class="voltar-topo">
+                <a href="#topo">↑ Voltar ao topo</a>
+            </div>
+        </footer>
+      </section>
     </div>
-  </section>
+    <div class="footer__copy">
+      © 2025 Promon - Todos os direitos reservados. Imagens ilustrativas.
+    </div>
+  </footer>
+
+  <span class="sr-only" id="sr-instructions">Use Tab para navegar. Pressione Enter para abrir itens.</span>
 </body>
 </html>

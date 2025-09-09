@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Promon — Ofertas e Economia</title>
+  <link rel="stylesheet" href="css/Style.css" />
+</head>
+<body>
+  <a id="topo"></a>
+
+  <header class="header">
+    <div class="container header__row">
+        <div class="logo">
+          <a href="index.html" class="logo-link">
+            <img src="img/Promon_corte.png" width="100" class="logo_marca" alt="Logo Promon">
+            <span class="logo_texto">Promon</span>
+        </a>
+      </div>
+
+      <form class="busca" role="search" aria-label="Buscar ofertas">
+        <input id="q" name="q" type="search" placeholder="O que você procura..." />
+            <button type="submit" class="btn">Buscar</button>
+      </form>
+
+      <div class="header__actions">
+        <button class="location" aria-label="Selecionar localização">
+          <span class="location__pin" aria-hidden="true">📍</span>
+          <span class="location__text">Sua cidade</span>
+        </button>
+        <nav class="user-nav" aria-label="Acesso do usuário">
+          <a href="#" class="user-nav__link">Entrar</a>
+          <a href="#" class="user-nav__link">Cadastrar</a>
+          <a href="#" class="user-nav__link" aria-label="Carrinho">🛒</a>
+        </nav>
+      </div>
+    </div>
+
+    <nav class="nav" aria-label="Categorias"> <!--aqui estou criando o menu linkando para as outras páginas-->
+      <div class="container nav__row">
+        <a href="index.html" class="nav__link ">Destaques</a>
+        <a href="saudeefitness.html" class="nav__link">Saúde e Fitness</a>
+        <a href="comidasebebidas.html" class="nav__link">Comidas & Bebidas</a>
+        <a href="belezaespa.html" class="nav__link">Beleza & Spar</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Seção Institucional -->
+    <section class="container section sobre">
+      <h1>Sobre a Promon</h1>
+      <p>A Promon nasceu para conectar pessoas às melhores ofertas de experiências, produtos e serviços. 
+         Nosso objetivo é proporcionar economia e qualidade, facilitando o acesso a oportunidades que 
+         tornam o dia a dia mais leve e prazeroso.</p>
+      <p>Valorizamos parcerias com empresas locais, incentivando o comércio e fortalecendo a economia da região.</p>
+    </section>
+
+    <!-- Seção Missão / Visão / Valores -->
+    <section class="container section mvvs">
+      <h2>Nosso Propósito</h2>
+      <div class="mvvs__grid">
+        <div class="mvvs__item">
+          <h3>Missão</h3>
+          <p>Oferecer experiências de qualidade com preços acessíveis, conectando clientes e negócios.</p>
+        </div>
+        <div class="mvvs__item">
+          <h3>Visão</h3>
+          <p>Ser a plataforma referência em economia inteligente e descoberta de novas experiências.</p>
+        </div>
+        <div class="mvvs__item">
+          <h3>Valores</h3>
+          <ul>
+            <li>💡 Inovação constante</li>
+            <li>🤝 Parceria com respeito</li>
+            <li>📢 Transparência e confiança</li>
+            <li>🌱 Impacto positivo na comunidade</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <section>
+        <h4>Sobre</h4>
+        <ul>
+          <li><a href="sobre.html">Conheça a Promon</a></li>
+        </ul>
+      </section>
+      <section>
+        <h4>Fale Conosco</h4>
+        <ul>
+          <li><a href="#">Ajuda</a></li>
+          <li><a href="troca_reembolso.html">Trocas e reembolsos</a></li>
+        </ul>
+      </section>
+      <section>
+        <h4>Contatos</h4>
+         <footer>
+             <div class="contatos">
+                <p>Email: <a href="contato@promon.com.br">contato@promon.com.br</a></p>
+                <p>Telefone: <a href="tel:+556140001234">(61) 4000-1234</a></p>
+                <p>SAC: <a href="tel:08007776060"> 0800 777 6060</a></p>
+            </div>
+            <div class="voltar-topo">
+                <a href="#topo">↑ Voltar ao topo</a>
+            </div>
+        </footer>
+      </section>
+    </div>
+    <div class="footer__copy">
+      © 2025 Promon - Todos os direitos reservados. Imagens ilustrativas.
+    </div>
+  </footer>
+
+  <span class="sr-only" id="sr-instructions">Use Tab para navegar. Pressione Enter para abrir itens.</span>
+</body>
+</html>

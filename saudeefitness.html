@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style.css" />
-    <title>Promon — Ofertas e Economia</title>
+    <link rel="stylesheet" href="css/Style.css" />
+    <title>Saúde e Fitness | Promon — Ofertas e Economia</title>
 </head>
 <body>
     <a id="topo"></a>
  <header class="header">
     <div class="container header__row">
         <div class="logo">
-        <img src="img/Promon_corte.png" width="100" class="logo_marca"><span class="logo_texto">Promon</span>
-        </div>
+          <a href="index.html" class="logo-link">
+            <img src="img/Promon_corte.png" width="100" class="logo_marca" alt="Logo Promon">
+            <span class="logo_texto">Promon</span>
+        </a>
+      </div>
 
       <form class="busca" role="search" aria-label="Buscar ofertas">
         <input id="q" name="q" type="search" placeholder="O que você procura..." />
@@ -33,26 +36,266 @@
     </div>
     <nav class="nav" aria-label="Categorias"> <!--aqui estou criando o menu linkando para as outras páginas-->
       <div class="container nav__row">
-        <a href="file:///C:/Users/diego/OneDrive/Documentos/Desenvolvimento_Front_End/Projeto_Promon/Projeto_Promon/index.html?q=saude#" class="nav__link is-active">Destaques</a>
-        <a href="file:///C:/Users/diego/OneDrive/Documentos/Desenvolvimento_Front_End/Projeto_Promon/Projeto_Promon/saudeefitness.html" class="nav__link">Saúde e Fitness</a>
-        <a href="file:///C:/Users/diego/OneDrive/Documentos/Desenvolvimento_Front_End/Projeto_Promon/Projeto_Promon/comidasebebidas.html" class="nav__link">Comidas & Bebidas</a>
-        <a href="file:///C:/Users/diego/OneDrive/Documentos/Desenvolvimento_Front_End/Projeto_Promon/Projeto_Promon/belezaespa.html" class="nav__link">Beleza & Spar</a>
-      </div>
+        <a href="index.html" class="nav__link ">Destaques</a>
+        <a href="saudeefitness.html" class="nav__link is-active">Saúde e Fitness</a>
+        <a href="comidasebebidas.html" class="nav__link">Comidas & Bebidas</a>
+        <a href="belezaespa.html" class="nav__link">Beleza & Spar</a>
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="container hero__content">
-      <div class="hero__text">
-        <h1>Descubra ofertas que transformam seu dia!</h1>
-        <p>Economize em restaurantes, SPA, academias e muito mais.</p>
-        <form class="hero__search" role="search" aria-label="Buscar no banner">
-          <label class="sr-only" for="hero-q">Buscar</label>
-          <input id="hero-q" name="q" type="search" placeholder="Ex.: rodízio, massagem, hotel..." />
-          <button type="submit" class="btn btn--primary">Explorar</button>
-        </form>
+  <!-- Seção: Ofertas em destaque -->
+  <main class="main" id="conteudo">
+    <section class="container section">
+      <header class="section__head">
+        <h1>Saúde e Fitness Perto de Você</h1>
+        <a href="#" class="section__cta"></a>
+      </header>
+      
+   <div class="grid grid--deals-modificado">
+        <!-- Card 1 -->
+        <article class="deal-card">
+          <a href="#" class="deal-card__link" aria-label="Uma das melhores academia de Brasília">
+            <figure class="deal-card__media">
+              <img src="img/academia_1.jpg" alt="Malhe em Brasilia" loading="lazy">
+              <figcaption class="sr-only">Uma das melhores academia de Brasília</figcaption>
+              <span class="badge badge--green">-30%</span>
+            </figure>
+            <div class="deal-card__body">
+              <h3 class="deal-card__title">Treinner Academia</h3>
+              <p class="deal-card__meta">Planos • 12 meses</p>
+              <div class="deal-card__price">
+                <span class="price__current">R$ 104,90</span>
+                <span class="price__old">R$ 149,90</span>
+              </div>
+              <div class="deal-card__foot">
+                <span class="rating" aria-label="Avaliação 4,6 de 5">⭐ 4,6 (2.134)</span>
+                <span class="left">Acabando!</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="deal-card">
+          <a href="#" class="deal-card__link" aria-label="Atendimento Quiroprático">
+            <figure class="deal-card__media">
+              <img src="img/quiropraxista.png" alt="Atendimento Quiroprático" loading="lazy">
+              <figcaption class="sr-only">Atendimento Quiroprático</figcaption>
+              <span class="badge badge--green">-86%</span>
+            </figure>
+            <div class="deal-card__body">
+              <h3 class="deal-card__title">Atendimento Quiroprático Abrangente com Exame, Raio-X e Ajustes de até 86%y</h3>
+              <p class="deal-card__meta">Centro de Saúde e Bem-Estar Ravenswood</p>
+              <div class="deal-card__price">
+                <span class="price__current">R$ 90,50 </span>
+                <span class="price__old">R$ 200,80</span>
+              </div>
+              <div class="deal-card__foot">
+                <span class="rating">⭐ 4,7 (925)</span>
+                <span class="left">Alta procura</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="deal-card">
+          <a href="#" class="deal-card__link" aria-label="2 ou 4 semanas de aulas de condicionamento físico ilimitadas da CrossTown Fitness">
+            <figure class="deal-card__media">
+              <img src="img/CrossTown Fitness.png" alt="2 ou 4 semanas de aulas de condicionamento físico ilimitado" loading="lazy">
+              <figcaption class="sr-only">2 ou 4 semanas de aulas de condicionamento físico ilimitadas da CrossTown Fitness</figcaption>
+              <span class="badge badge--green">-48%</span>
+            </figure>
+            <div class="deal-card__body">
+              <h3 class="deal-card__title">2 ou 4 semanas de aulas de condicionamento físico ilimitadas da CrossTown Fitness</h3>
+              <p class="deal-card__meta">CrossTown Fitness • Brasilia • Aguas Claras</p>
+              <div class="deal-card__price">
+                <span class="price__current">R$ 170,58</span>
+                <span class="price__old">R$ 189,53</span>
+              </div>
+              <div class="deal-card__foot">
+                <span class="rating">⭐ 4,9 (555)</span>
+                <span class="left">Desconto extra de R$ 18,95 somente hoje </span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="deal-card">
+          <a href="#" class="deal-card__link" aria-label="Yoga Clássico para o Estudante Moderno">
+            <figure class="deal-card__media">
+              <img src="img/Yoga Clássico para o Estudante Moderno.png" alt="Yoga Clássico para o Estudante Moderno" loading="lazy">
+              <figcaption class="sr-only">Yoga Clássico para o Estudante Moderno</figcaption>
+              <span class="badge badge--green">-55%</span>
+            </figure>
+            <div class="deal-card__body">
+              <h3 class="deal-card__title">Yoga Clássico para o Estudante Moderno (Até 55% de Desconto)</h3>
+              <p class="deal-card__meta">Centro de Yoga Moksha • Brasilia • 540 Sul </p>
+              <div class="deal-card__price">
+                <span class="price__current">R$ 389,89</span>
+                <span class="price__old">R$ 433,22</span>
+              </div>
+              <div class="deal-card__foot">
+                <span class="rating">⭐ 4,8 (1.759)</span>
+                <span class="left">Desconto extra R$ 43,32 por tempo limitado</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="deal-card">
+          <a href="#" class="deal-card__link" aria-label="ioga aérea na AIR Aerial Fitness">
+            <figure class="deal-card__media">
+              <img src="img/ioga aérea na AIR.png" alt="ioga aérea na AIR Aerial Fitness" loading="lazy">
+              <figcaption class="sr-only">ioga aérea na AIR Aerial Fitness</figcaption>
+              <span class="badge badge--green">-29%</span>
+            </figure>
+            <div class="deal-card__body">
+              <h3 class="deal-card__title">Até 29% de desconto em ioga aérea na AIR Aerial Fitness</h3>
+              <p class="deal-card__meta">AIR Aerial Fitness  • Brasilia • Sudoeste</p>
+              <div class="deal-card__price">
+                <span class="price__current">R$ 555,60</span>
+                <span class="price__old">R$ 617,33</span>
+              </div>
+              <div class="deal-card__foot">
+                <span class="rating">⭐ 5,0 (14)</span>
+                <span class="left">Tempo Limitado</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="deal-card">
+          <a href="#" class="deal-card__link" aria-label="Restauração Capilar PRP">
+            <figure class="deal-card__media">
+              <img src="img/Restauração Capilar PRP.png" alt="Clinica Saude" loading="lazy">
+              <figcaption class="sr-only">Restauração Capilar PRP</figcaption>
+              <span class="badge badge--green">-75%</span>
+            </figure>
+            <div class="deal-card__body">
+              <h3 class="deal-card__title">Restauração Capilar PRP</h3>
+              <p class="deal-card__meta">Arlington Heights • Brasilia • Taguatinga - Sul</p>
+              <div class="deal-card__price">
+                <span class="price__current">R$ 2261,39</span>
+                <span class="price__old">R$ 2512,00</span>
+              </div>
+              <div class="deal-card__foot">
+                <span class="rating">⭐ 4,7 (49)</span>
+                <span class="left">Vende Rápido</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Card 7 -->
+        <article class="deal-card">
+          <a href="#" class="deal-card__link" aria-label="Hot Yoga: Uma aula com aluguel de tapete e toalha">
+            <figure class="deal-card__media">
+              <img src="img/hot_yoga.png" alt="Clinica Saude" loading="lazy">
+              <figcaption class="sr-only">Hot Yoga: Uma aula com aluguel de tapete e toalha</figcaption>
+              <span class="badge badge--green">-29%</span>
+            </figure>
+            <div class="deal-card__body">
+              <h3 class="deal-card__title">Hot Yoga: Uma aula com aluguel de tapete e toalha inclusos ou 3 semanas de aulas ilimitadas</h3>
+              <p class="deal-card__meta">105F Ioga • Brasilia • Lago Sul </p>
+              <div class="deal-card__price">
+                <span class="price__current">R$ 121,84</span>
+                <span class="price__old">R$ 135,38</span>
+              </div>
+              <div class="deal-card__foot">
+                <span class="rating">⭐ 4,8 (64)</span>
+                <span class="left">Somente Hoje</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Card 8 -->
+        <article class="deal-card">
+          <a href="#" class="deal-card__link" aria-label="Five Rounds">
+            <figure class="deal-card__media">
+              <img src="img/luta_marcial.png" alt="Five Rounds" loading="lazy">
+              <figcaption class="sr-only">Five Rounds</figcaption>
+              <span class="badge badge--green">-35%</span>
+            </figure>
+            <div class="deal-card__body">
+              <h3 class="deal-card__title">Five Rounds é a escolha certa para quem procura um centro de artes marciais</h3>
+              <p class="deal-card__meta"> Brasilia • SIG QUADRA 6 1435 Sudoeste</p>
+              <div class="deal-card__price">
+                <span class="price__current">R$ 139,90</span>
+                <span class="price__old">R$ 250,00</span>
+              </div>
+              <div class="deal-card__foot">
+                <span class="rating">⭐ 4,89 (95)</span>
+                <span class="left">Agende sua Luta</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Card 9 -->
+        <article class="deal-card">
+          <a href="#" class="deal-card__link" aria-label="Bodytech - Sudoeste">
+            <figure class="deal-card__media">
+              <img src="img/bodytech.png" alt="Bodytech - Sudoeste" loading="lazy">
+              <figcaption class="sr-only">Bodytech - Sudoeste</figcaption>
+              <span class="badge badge--green">-30%</span>
+            </figure>
+            <div class="deal-card__body">
+              <h3 class="deal-card__title">Bodytech - Sudoeste - trabalhamos os dois: a ação e o resultado</h3>
+              <p class="deal-card__meta">Brasilia •  Sudoeste</p>
+              <div class="deal-card__price">
+                <span class="price__current">R$ 140,90</span>
+                <span class="price__old">R$ 250,00</span>
+              </div>
+              <div class="deal-card__foot">
+                <span class="rating">⭐ 4,92 (258)</span>
+                <span class="left">Desconto Somente Hoje</span>
+              </div>
+            </div>
+          </a>
+        </article>
       </div>
+    </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <section>
+        <h4>Sobre</h4>
+        <ul>
+          <li><a href="sobre.html">Conheça a Promon</a></li>
+        </ul>
+      </section>
+      <section>
+        <h4>Fale Conosco</h4>
+        <ul>
+          <li><a href="#">Ajuda</a></li>
+          <li><a href="troca_reembolso.html">Trocas e reembolsos</a></li>
+        </ul>
+      </section>
+      <section>
+        <h4>Contatos</h4>
+         <footer>
+             <div class="contatos">
+                <p>Email: <a href="contato@promon.com.br">contato@promon.com.br</a></p>
+                <p>Telefone: <a href="tel:+556140001234">(61) 4000-1234</a></p>
+                <p>SAC: <a href="tel:08007776060"> 0800 777 6060</a></p>
+            </div>
+            <div class="voltar-topo">
+                <a href="#topo">↑ Voltar ao topo</a>
+            </div>
+        </footer>
+      </section>
     </div>
-  </section>
+    <div class="footer__copy">
+      © 2025 Promon - Todos os direitos reservados. Imagens ilustrativas.
+    </div>
+  </footer>
+
+  <span class="sr-only" id="sr-instructions">Use Tab para navegar. Pressione Enter para abrir itens.</span>
 </body>
 </html>

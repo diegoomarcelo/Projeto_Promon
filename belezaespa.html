@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style.css" />
-    <title>Promon — Ofertas e Economia</title>
+    <link rel="stylesheet" href="css/Style.css" />
+    <title>Beleza e Spas Perto | Promon — Ofertas e Economia</title>
 </head>
 <body>
     <a id="topo"></a>
  <header class="header">
     <div class="container header__row">
         <div class="logo">
-        <img src="img/Promon_corte.png" width="100" class="logo_marca"><span class="logo_texto">Promon</span>
-        </div>
+          <a href="index.html" class="logo-link">
+            <img src="img/Promon_corte.png" width="100" class="logo_marca" alt="Logo Promon">
+            <span class="logo_texto">Promon</span>
+        </a>
+      </div>
 
       <form class="busca" role="search" aria-label="Buscar ofertas">
         <input id="q" name="q" type="search" placeholder="O que você procura..." />
@@ -33,26 +36,269 @@
     </div>
     <nav class="nav" aria-label="Categorias"> <!--aqui estou criando o menu linkando para as outras páginas-->
       <div class="container nav__row">
-        <a href="file:///C:/Users/diego/OneDrive/Documentos/Desenvolvimento_Front_End/Projeto_Promon/Projeto_Promon/index.html?q=saude#" class="nav__link is-active">Destaques</a>
-        <a href="file:///C:/Users/diego/OneDrive/Documentos/Desenvolvimento_Front_End/Projeto_Promon/Projeto_Promon/saudeefitness.html" class="nav__link">Saúde e Fitness</a>
-        <a href="file:///C:/Users/diego/OneDrive/Documentos/Desenvolvimento_Front_End/Projeto_Promon/Projeto_Promon/comidasebebidas.html" class="nav__link">Comidas & Bebidas</a>
-        <a href="file:///C:/Users/diego/OneDrive/Documentos/Desenvolvimento_Front_End/Projeto_Promon/Projeto_Promon/belezaespa.html" class="nav__link">Beleza & Spar</a>
+        <a href="index.html" class="nav__link ">Destaques</a>
+        <a href="saudeefitness.html" class="nav__link">Saúde e Fitness</a>
+        <a href="comidasebebidas.html" class="nav__link">Comidas & Bebidas</a>
+        <a href="belezaespa.html" class="nav__link is-active">Beleza & Spar</a>
       </div>
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="container hero__content">
-      <div class="hero__text">
-        <h1>Descubra ofertas que transformam seu dia!</h1>
-        <p>Economize em restaurantes, SPA, academias e muito mais.</p>
-        <form class="hero__search" role="search" aria-label="Buscar no banner">
-          <label class="sr-only" for="hero-q">Buscar</label>
-          <input id="hero-q" name="q" type="search" placeholder="Ex.: rodízio, massagem, hotel..." />
-          <button type="submit" class="btn btn--primary">Explorar</button>
-        </form>
+  
+  <!-- Seção: Ofertas em destaque -->
+  <main class="main" id="conteudo">
+    <section class="container section">
+      <header class="section__head">
+        <h1>Beleza e Spas Perto de Você</h1>
+      </header>
+      
+   <div class="grid grid--deals-modificado">
+        <!-- Card 1 -->
+        <article class="deal-card">
+          <a href="#" class="deal-card__link" aria-label=""">
+            <figure class="deal-card__media">
+              <img src="img/massagem60_minutos.jpeg" alt="Massagem 60 minutos a 90 minutos" loading="lazy">
+              <figcaption class="sr-only">Massagem de 60 minutos e 90 minutos com espumante </figcaption>
+              <span class="badge badge--green">-50%</span>
+            </figure>
+            <div class="deal-card__body">
+              <h3 class="deal-card__title">Massagem de 60 minutos e 90 minutos com espumante </h3>
+              <p class="deal-card__meta">Blanc Spa Kubitschek • Brasília</p>
+              <div class="deal-card__price">
+                <span class="price__current">R$  100,00 </span>
+                <span class="price__old">R$ 150,90 </span>
+              </div>
+              <div class="deal-card__foot">
+                <span class="rating" aria-label="Avaliação 4,6 de 5">⭐ 4,8 (340)</span>
+                <span class="left">Tempo Limitado</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="deal-card">
+          <a href="#" class="deal-card__link" aria-label="Ver oferta Day Spa com massagem">
+            <figure class="deal-card__media">
+              <img src="img/SPA_1.jpeg" alt="Ambiente de spa" loading="lazy">
+              <figcaption class="sr-only">Day Spa com massagem</figcaption>
+              <span class="badge badge--green">-55%</span>
+            </figure>
+            <div class="deal-card__body">
+              <h3 class="deal-card__title">SPA CENTER</h3>
+              <p class="deal-card__meta">Dia • 90 minutos</p>
+              <div class="deal-card__price">
+                <span class="price__current">R$ 89,90</span>
+                <span class="price__old">R$ 199,90</span>
+              </div>
+              <div class="deal-card__foot">
+                <span class="rating">⭐ 4,8 (984)</span>
+                <span class="left">Alta procura</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="deal-card">
+          <a href="#" class="deal-card__link" aria-label="Saia linda e radiante em um dos mais renomados salão de Brasília">
+            <figure class="deal-card__media">
+              <img src="img/salao_1.jpg" alt="Salao com a maior qualidade" loading="lazy">
+              <figcaption class="sr-only">Saia linda e radiante em um dos mais renomados salão de Brasília</figcaption>
+              <span class="badge badge--green">-40%</span>
+            </figure>
+            <div class="deal-card__body">
+              <h3 class="deal-card__title">SAILON</h3>
+              <p class="deal-card__meta">Centro • Cancelamento grátis</p>
+              <div class="deal-card__price">
+                <span class="price__current">R$ 219,00</span>
+                <span class="price__old">R$ 369,00</span>
+              </div>
+              <div class="deal-card__foot">
+                <span class="rating">⭐ 4,5 (1.102)</span>
+                <span class="left">Atendimento mediante agendamento!</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="deal-card">
+          <a href="#" class="deal-card__link" aria-label="Botox">
+            <figure class="deal-card__media">
+              <img src="img/Botox.jpeg" alt="Clinica Saude" loading="lazy">
+              <figcaption class="sr-only">Botox: 20 ou 40 unidades; revitalize seu brilho</figcaption>
+              <span class="badge badge--green">-49%</span>
+            </figure>
+            <div class="deal-card__body">
+              <h3 class="deal-card__title">Botox: 20 ou 40 unidades; revitalize seu brilho e revitalize sua beleza atemporal</h3>
+              <p class="deal-card__meta">Pure Med Spa • Brasilia • Asa Sul</p>
+              <div class="deal-card__price">
+                <span class="price__current">R$ 229,05</span>
+                <span class="price__old">R$ 450,80 </span>
+              </div>
+              <div class="deal-card__foot">
+                <span class="rating">⭐ 4,8 (4.572)</span>
+                <span class="left">Desconto de 49% somente hoje</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="deal-card">
+          <a href="#" class="deal-card__link" aria-label="Depilacao a laser">
+            <figure class="deal-card__media">
+              <img src="img/depilacao.png" alt="Depilacao a laser" loading="lazy">
+              <figcaption class="sr-only">Botox: 20 ou 40 unidades; revitalize seu brilho</figcaption>
+              <span class="badge badge--green">-10%</span>
+            </figure>
+            <div class="deal-card__body">
+              <h3 class="deal-card__title">Seis sessões de depilação a laser para áreas pequenas, médias ou grandes no Derma Bliss Beauty Spa</h3>
+              <p class="deal-card__meta">Derma Bliss Beauty Spa • Brasilia • Taguatinga - Norte</p>
+              <div class="deal-card__price">
+                <span class="price__current">R$ 270,45</span>
+                <span class="price__old">R$ 280,90</span>
+              </div>
+              <div class="deal-card__foot">
+                <span class="rating">⭐ 4,8 (1.174)</span>
+                <span class="left">Tempo Limitado</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+         <!-- Card 6 -->
+        <article class="deal-card">
+          <a href="#" class="deal-card__link" aria-label="Massagem de 50 minutos facial spa">
+            <figure class="deal-card__media">
+              <img src="img/Leaf Spa.png" alt="Massagem de 50 minutos facial spa" loading="lazy">
+              <figcaption class="sr-only">Massagem de 50 minutos facial spa</figcaption>
+              <span class="badge badge--green">-10%</span>
+            </figure>
+            <div class="deal-card__body">
+              <h3 class="deal-card__title">Experiência de spa definitiva! Massagem de 50 minutos, facial ou para casais no Leaf Spa | Fairmont </h3>
+              <p class="deal-card__meta">Leaf Spa • Brasilia • 612 - Norte</p>
+              <div class="deal-card__price">
+                <span class="price__current">R$ 540,45</span>
+                <span class="price__old">R$ 550,90 </span>
+              </div>
+              <div class="deal-card__foot">
+                <span class="rating">⭐ 4,3 (65)</span>
+                <span class="left">Tempo Limitado</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+         <!-- Card 7  -->
+        <article class="deal-card">
+          <a href="#" class="deal-card__link" aria-label="Spa completo com massagem no coro cabeludo">
+            <figure class="deal-card__media">
+              <img src="img/Spa completo com massagem.png" alt="Spa completo com massagem no coro cabeludo" loading="lazy">
+              <figcaption class="sr-only">Spa completo com massagem no coro cabeludo</figcaption>
+              <span class="badge badge--green">-52%</span>
+            </figure>
+            <div class="deal-card__body">
+              <h3 class="deal-card__title">Spa completo de 60 ou 90 minutos com massagem no couro cabeludo, ombros e costas para uma ou duas pessoas (até 52% de desconto)</h3>
+              <p class="deal-card__meta">Spa TouYuanTang • Brasilia • 906 Sul </p>
+              <div class="deal-card__price">
+                <span class="price__current">R$ 280,90 </span>
+                <span class="price__old">R$ 350,90</span>
+              </div>
+              <div class="deal-card__foot">
+                <span class="rating">⭐ 4,5 (7.669)</span>
+                <span class="left">Tempo Limitado</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+         <!-- Card 8 -->
+        <article class="deal-card">
+          <a href="#" class="deal-card__link" aria-label="Melhore suas unhas: manicure unha em gel e pedicure com tecnologia SMART">
+            <figure class="deal-card__media">
+              <img src="img/unhaemgel.png" alt="Melhore suas unhas: manicure unha em gel e pedicure com tecnologia SMART" loading="lazy">
+              <figcaption class="sr-only">Melhore suas unhas: manicure unha em gel e pedicure com tecnologia SMART</figcaption>
+              <span class="badge badge--green">-35%</span>
+            </figure>
+            <div class="deal-card__body">
+              <h3 class="deal-card__title">Melhore suas unhas: manicure unha em gel e pedicure com tecnologia SMART (até 35% de desconto)</h3>
+              <p class="deal-card__meta">GT LAB • Brasilia • Taguatinga - Sul</p>
+              <div class="deal-card__price">
+                <span class="price__current">R$ 131,80</span>
+                <span class="price__old">R$ 135,90 </span>
+              </div>
+              <div class="deal-card__foot">
+                <span class="rating">⭐ 5,0 (100)</span>
+                <span class="left">Tempo Limitado</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+         <!-- Card 9 -->
+        <article class="deal-card">
+          <a href="#" class="deal-card__link" aria-label="Depilacao a laser">
+            <figure class="deal-card__media">
+              <img src="img/corte_cabelo_luzes.png" alt="Corte de Cabelo feminino descoloração e luzes completo" loading="lazy">
+              <figcaption class="sr-only">Corte de Cabelo feminino descoloração e luzes completo</figcaption>
+              <span class="badge badge--green">-10%</span>
+            </figure>
+            <div class="deal-card__body">
+              <h3 class="deal-card__title">Corte de cabelo feminino com xampu e escova, coloração de cabelo em um único processo ou luzes completas</h3>
+              <p class="deal-card__meta">Flash Corte Lop • Brasilia • Ceilandia - Centro</p>
+              <div class="deal-card__price">
+                <span class="price__current">R$ 340,70</span>
+                <span class="price__old">R$ 350,80</span>
+              </div>
+              <div class="deal-card__foot">
+                <span class="rating">⭐ 5,0 (800)</span>
+                <span class="left">Tempo Limitado</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+
       </div>
+    </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <section>
+        <h4>Sobre</h4>
+        <ul>
+          <li><a href="sobre.html">Conheça a Promon</a></li>
+        </ul>
+      </section>
+      <section>
+        <h4>Fale Conosco</h4>
+        <ul>
+          <li><a href="#">Ajuda</a></li>
+          <li><a href="troca_reembolso.html">Trocas e reembolsos</a></li>
+        </ul>
+      </section>
+      <section>
+        <h4>Contatos</h4>
+         <footer>
+             <div class="contatos">
+                <p>Email: <a href="contato@promon.com.br">contato@promon.com.br</a></p>
+                <p>Telefone: <a href="tel:+556140001234">(61) 4000-1234</a></p>
+                <p>SAC: <a href="tel:08007776060"> 0800 777 6060</a></p>
+            </div>
+            <div class="voltar-topo">
+                <a href="#topo">↑ Voltar ao topo</a>
+            </div>
+        </footer>
+      </section>
     </div>
-  </section>
+    <div class="footer__copy">
+      © 2025 Promon - Todos os direitos reservados. Imagens ilustrativas.
+    </div>
+  </footer>
+
+  <span class="sr-only" id="sr-instructions">Use Tab para navegar. Pressione Enter para abrir itens.</span>
 </body>
 </html>

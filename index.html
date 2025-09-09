@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Promon — Ofertas e Economia</title>
-  <link rel="stylesheet" href="Style.css" />
+  <link rel="stylesheet" href="css/Style.css" />
 </head>
 <body>
   <a id="topo"></a>
@@ -12,8 +12,11 @@
   <header class="header">
     <div class="container header__row">
         <div class="logo">
-        <img src="img/Promon_corte.png" width="100" class="logo_marca"><span class="logo_texto">Promon</span>
-        </div>
+          <a href="index.html" class="logo-link">
+            <img src="img/Promon_corte.png" width="100" class="logo_marca" alt="Logo Promon">
+            <span class="logo_texto">Promon</span>
+        </a>
+      </div>
 
       <form class="busca" role="search" aria-label="Buscar ofertas">
         <input id="q" name="q" type="search" placeholder="O que você procura..." />
@@ -35,10 +38,10 @@
 
     <nav class="nav" aria-label="Categorias"> <!--aqui estou criando o menu linkando para as outras páginas-->
       <div class="container nav__row">
-        <a href="file:///C:/Users/diego/OneDrive/Documentos/Desenvolvimento_Front_End/Projeto_Promon/Projeto_Promon/index.html?q=saude#" class="nav__link is-active">Destaques</a>
-        <a href="file:///C:/Users/diego/OneDrive/Documentos/Desenvolvimento_Front_End/Projeto_Promon/Projeto_Promon/saudeefitness.html" class="nav__link">Saúde e Fitness</a>
-        <a href="file:///C:/Users/diego/OneDrive/Documentos/Desenvolvimento_Front_End/Projeto_Promon/Projeto_Promon/comidasebebidas.html" class="nav__link">Comidas & Bebidas</a>
-        <a href="file:///C:/Users/diego/OneDrive/Documentos/Desenvolvimento_Front_End/Projeto_Promon/Projeto_Promon/belezaespa.html" class="nav__link">Beleza & Spar</a>
+        <a href="index.html" class="nav__link is-active">Destaques</a>
+        <a href="saudeefitness.html" class="nav__link">Saúde e Fitness</a>
+        <a href="comidasebebidas.html" class="nav__link">Comidas & Bebidas</a>
+        <a href="belezaespa.html" class="nav__link">Beleza & Spar</a>
       </div>
     </nav>
   </header>
@@ -56,6 +59,69 @@
       </div>
     </div>
   </section>
+
+  <!-- Tendências -->
+<section class="container section trends">
+  <header class="section__head">
+    <h2>Tendências em Brasília</h2>
+  </header>
+
+  <div class="trends__grid">
+    <!-- 1) Card destaque (mais largo, estilo da coluna da esquerda) -->
+    <a href="#" class="trend-card">
+      <img src="img/brasilia.jpg" alt="Ofertas para curtir a capital">
+      <div class="trend-card__overlay">
+        <h3>Ofertas para curtir a capital</h3>
+        <span class="trend-card__cta">→ Ver mais</span>
+      </div>
+    </a>
+
+    <!-- 2) Card normal -->
+    <a href="#" class="trend-card">
+      <img src="img/treinando_academia.jpg" alt="Treine pagando menos">
+      <div class="trend-card__overlay">
+        <h3>Treine pagando menos</h3>
+        <span class="trend-card__cta">→ Ver mais</span>
+      </div>
+    </a>
+
+    <!-- 3) Card normal -->
+    <a href="#" class="trend-card">
+      <img src="img/restaurante.jpg" alt="Sabores com até 30% OFF">
+      <div class="trend-card__overlay">
+        <h3>Sabores com até 30% OFF</h3>
+        <span class="trend-card__cta">→ Ver mais</span>
+      </div>
+    </a>
+
+   <!-- 4) Card normal -->
+    <a href="#" class="trend-card">
+      <img src="img/beleza e saude.jpg" alt="Dia de cuidado com desconto!">
+      <div class="trend-card__overlay">
+        <h3>Dia de cuidado com desconto!</h3>
+        <span class="trend-card__cta">→ Ver mais</span>
+      </div>
+    </a>
+
+    <!-- 5) Card normal -->
+    <a href="#" class="trend-card">
+      <img src="img/promoçao_categorias.jpg" alt="Descontos especiais em todas as categorias – aproveite agora!">
+      <div class="trend-card__overlay">
+        <h3>Descontos especiais em todas as categorias – aproveite agora</h3>
+        <span class="trend-card__cta">→ Ver mais</span>
+      </div>
+    </a>
+
+    <!-- 6) Card normal -->
+    <a href="#" class="trend-card">
+      <img src="img/saude_desconto.png" alt="Cuide de você: saúde com até 40% OFF!">
+      <div class="trend-card__overlay">
+        <h3>Cuide de você: saúde com até 40% OFF!</h3>
+        <span class="trend-card__cta">→ Ver mais</span>
+      </div>
+    </a>
+  </div>
+</section>
 
   <!-- Seção: Ofertas em destaque -->
   <main class="main" id="conteudo">
@@ -158,8 +224,9 @@
           </a>
         </article>
       </div>
-    </section>
-
+   
+    <br>
+    
     <!-- Newsletter -->
     <section class="newsletter">
       <div class="container newsletter__box">
@@ -179,14 +246,14 @@
       <section>
         <h4>Sobre</h4>
         <ul>
-          <li><a href="#">Conheça a Promon</a></li>
+          <li><a href="sobre.html">Conheça a Promon</a></li>
         </ul>
       </section>
       <section>
         <h4>Fale Conosco</h4>
         <ul>
           <li><a href="#">Ajuda</a></li>
-          <li><a href="#">Trocas e reembolsos</a></li>
+          <li><a href="troca_reembolso.html">Trocas e reembolsos</a></li>
         </ul>
       </section>
       <section>
